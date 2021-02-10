@@ -1,0 +1,2 @@
+Este es otro archivo txt
+Este archivo fue creado en la rama1 y no en la master
