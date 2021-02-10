@@ -1,2 +1,2 @@
 Hola Mundo!!!
-Otro ejemplo para escribir el commit
+Otro ejemplo para escribir el commit separado por -m
