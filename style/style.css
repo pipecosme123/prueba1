@@ -1,0 +1,25 @@
+.text{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #383838;
+    line-height: 25px;
+    font-size: 14px;
+}
+.titulo{
+    font-size: 48px;
+    color: #00008b;
+    font-weight: bold;
+}
+.titulo2{
+    color:#5d5dff;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-size: 15px;
+    font-style: italic;
+}
+/*
+.lista{
+
+}*/
