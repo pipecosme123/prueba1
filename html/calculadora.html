@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='../style/styleCalculator.css'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculadora">
+        <h2>UAO</h2>
+        <h1>CALCULATOR</h1>
+        <div class="funciones">
+            <div class="entrada">
+                <label for="num1">Primer Numero:</label>
+                <input type="number" id="num1" name="num1"><br>
+                <label for="num2">Segundo Numero:</label>
+                <input type="numbre" id="num2" name="num2"><br>
+                <select name="operacion" id="op">
+                    <option value="+">Sumar</option>
+                    <option value="-">Restar</option>
+                    <option value="*">Multiplicar</option>
+                    <option value="/">Dividir</option>
+                </select>
+            </div>
+            <button id="resultado" onclick="onClickClaculator();">=</button>
+            <h1 id="rPantalla"></h1>
+        </div>
+    </div>
+</body>
+<script src="../JS/script.js"></script>
+</html> 

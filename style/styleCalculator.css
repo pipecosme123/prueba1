@@ -1,0 +1,12 @@
+body{
+    background: #dbe0e4;
+}
+
+.calculadora{
+    background: #ffffff;
+    padding: 3%;
+}
+
+.funciones{
+    display: flex;
+}
