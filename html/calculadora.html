@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,37 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../style/styleCalculator.css'>
     <title>Document</title>
 </head>
+
 <body>
     <div class="calculadora">
-        <h2>UAO</h2>
-        <h1>CALCULATOR</h1>
-        <div class="funciones">
-            <div class="entrada">
-                <label for="num1">Primer Numero:</label>
-                <input type="number" id="num1" name="num1"><br>
-                <label for="num2">Segundo Numero:</label>
+        <header>
+            <h2>UAO</h2>
+            <h1>CALCULATOR</h1>
+        </header>
+        <div class="funciones" onchange="onClickCalculator();">
+            <div class="entrada" >
+                <label for="num1">Numero 1:</label><br>
+                <input type="number" id="num1" name="num1" ><br>
+                <label for="num2">Numero 2:</label><br>
                 <input type="numbre" id="num2" name="num2"><br>
+                <label for="operacion">Operación</label><br>
                 <select name="operacion" id="op">
-                    <option value="+">Sumar</option>
-                    <option value="-">Restar</option>
-                    <option value="*">Multiplicar</option>
-                    <option value="/">Dividir</option>
+                    <option class="opcion" value="+">Sumar</option>
+                    <option class="opcion" value="-">Restar</option>
+                    <option class="opcion" value="*">Multiplicar</option>
+                    <option class="opcion" value="/">Dividir</option>
                 </select>
             </div>
-            <button id="resultado" onclick="onClickClaculator();">=</button>
-            <h1 id="rPantalla"></h1>
+            <div class="igual">
+                <button id="resultado" onclick="onClickCalculator();">=</button>
+            </div>
+            <div class="p_resultado">
+                <label for="result">Resultado</label>
+                <h1 id="rPantalla"></h1>
+            </div>
         </div>
     </div>
 </body>
 <script src="../JS/script.js"></script>
-</html> 
+
+</html>

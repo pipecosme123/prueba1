@@ -1,13 +1,17 @@
-var num1 = 1;
-var num2 = 2;
+var num1 = "0";
+var num2 = "0";
 
 var stOperation = "";
 
-function onClickClaculator(){
+function onClickCalculator(){
     this.num1 = parseInt(document.getElementById('num1').value);
     this.num2 = parseInt(document.getElementById('num2').value);
     this.stOperation = document.getElementById('op').value.toUpperCase();
     calcular();
+    /*console.log(this.num1 + " .. " + this.num2 + " .. ");*/
+    /*if((this.num1 == "") && (this.num2 != "")){
+        calcular();
+    }*/
 }
 
 /**
@@ -24,13 +28,14 @@ function calcular(){
         result = this.num1 + this.num2;
         
     }else if(this.stOperation == "-"){
-        result = this.num1 + this.num2;
-        
+        result = this.num1 - this.num2;
+
     }else if(this.stOperation == "*"){
-        result = this.num1 + this.num2;
+        result = this.num1 * this.num2;
         
     }else if(this.stOperation == "/"){
-        result = this.num1 + this.num2;  
+        result = this.num1 / this.num2;  
+    
     }
     console.log(result);
     document.getElementById("rPantalla").innerHTML = result;
